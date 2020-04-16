@@ -339,6 +339,17 @@ body > .container-fluid > .row > div {
 .main-header .dropdown-menu .divider{
   margin: 0px;
 }
+
+form.editForm{
+  height: 100%;
+}
+form.editForm > .flex-column{
+  height: 100%;
+  display: flex;
+}
+form.editForm > .flex-column > .col:last-child{
+  flex: 1;
+}
 ul.tabs-list{
   list-style: none;
   display: flex;
@@ -413,8 +424,11 @@ ul.tabs-list > li > .badge.empty{
   margin-left: 10px;
 }
 .main #methods{
-  padding: 15px 15px 30px 15px;
+  padding: 30px 15px;
+  min-height: 100%;
+  margin-bottom: 0;
 }
+
 #no-methods{
   padding: 15px;
   border: 2px dashed #e5e5e5;
@@ -907,6 +921,7 @@ ul.list-unstyled > li{
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   display: flex;
+  background-color: #fff;
 }
 .active .method {
   border-top-color: #a7d0f1;
